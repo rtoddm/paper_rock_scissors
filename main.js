@@ -66,10 +66,23 @@ function playGame() {
   }
 
   if (humanScore > computerScore) {
+    alert(
+      `You Win! Final Score - You: ${humanScore}, Computer: ${computerScore}`
+    );
     console.log(
       `You Win! Final Score - You: ${humanScore}, Computer: ${computerScore}`
     );
+  } else if (humanScore == +computerScore) {
+    alert(
+      `It's a tie! Final Score - You: ${humanScore}, Computer: ${computerScore}`
+    );
+    console.log(
+      `It's a tie! Final Score - You: ${humanScore}, Computer: ${computerScore}`
+    );
   } else {
+    alert(
+      `You Lose! Final Score - You: ${humanScore}, Computer: ${computerScore}`
+    );
     console.log(
       `You Lose! Final Score - You: ${humanScore}, Computer: ${computerScore}`
     );
